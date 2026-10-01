@@ -1,6 +1,7 @@
 import gradio as gr
+import spaces
 
-from maind import (
+from main import (
     get_face_embeddings,
     search_photos
 )
@@ -56,6 +57,7 @@ def create_reference_people(
 # SEARCH FUNCTION
 # --------------------------------------------------
 
+@spaces.GPU
 def run_search(
     person_name,
     reference_files,
