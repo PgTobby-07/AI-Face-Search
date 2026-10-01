@@ -1,0 +1,5 @@
+gradio
+insightface
+onnxruntime
+opencv-python-headless
+numpy
